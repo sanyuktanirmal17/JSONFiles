@@ -2,43 +2,25 @@ package com.Bridgelabz.Project;
 
 import java.util.List;
 
+//import com.bridgelabz.oops.model.Stock;
+
 public class Inventory {
-	
-	private List<Wheat> Wheat;
-	private List<Pulses> Pulses;
-	private List<Rice> Rice;
-	private int total;
+	public static void main(String[] args) {
+		Util utiljson = new Util();
+		List<Stock> listStock = utiljson.convertJsonObj("E://Bridgelabz//Inventory.json");
 
-	public int getTotal() {
-		return total;
+		System.out.println("Total items in inventory =");
+		InventoryManager manage = new InventoryManager();
+
+		manage.readInventory(listStock);
+		manage.getTotalRiceWeight();
+		manage.getTotalPulsesWeight();
+		manage.getTotalWheatWeight();
+		manage.getPriceOfRice();
+		manage.getPriceOfPulses();
+		manage.getPriceOfWheat();
+
 	}
 
-	public void setTotal(int total) {
-		this.total = total;
-	}
-
-	public List<Wheat> getWheats() {
-		return Wheat;
-	}
-
-	public void setWheats(List<Wheat> wheat) {
-		Wheat = wheat;
-	}
-
-	public List<Pulses> getPulses() {
-		return Pulses;
-	}
-
-	public void setPulses(List<Pulses> pulses) {
-		Pulses = pulses;
-	}
-
-	public List<Rice> getRice() {
-		return Rice;
-	}
-
-	public void setRice(List<Rice> rice) {
-		Rice = rice;
-	}
 
 }

@@ -1,33 +1,26 @@
 {
 	"rice": [
 		{
-			"name": "basmati rice",
-			"weight": 10,
-			"pricePerKg": 52
-		},
+			"price_per_kg": 66,
+			"name": "basmati",
+			"weight": 7,
+			"totalPriceOfWeight": 0
+		}
+	],
+	"wheat": [
 		{
-			"name": "kolam rice",
-			"weight": 10,
-			"pricePerKg": 58
+			"price_per_kg": 88,
+			"name": "chakki_fresh",
+			"weight": 5,
+			"totalPriceOfWeight": 0
 		}
 	],
 	"pulses": [
 		{
-			"name": "dal",
-			"weight": 20,
-			"pricePerKg": 90
-		},
-		{
-			"name": "bajri",
-			"weight": 25,
-			"pricePerKg": 88
-		}
-	],
-	"wheats": [
-		{
-			"name": "gehu",
-			"weight": 25,
-			"pricePerKg": 70
+			"price_per_kg": 99,
+			"name": "greens",
+			"weight": 3,
+			"totalPriceOfWeight": 0
 		}
 	]
 }
